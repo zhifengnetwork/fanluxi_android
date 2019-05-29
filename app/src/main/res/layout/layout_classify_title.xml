@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/home_title"
+              android:layout_width="match_parent"
+              android:layout_height="44dp"
+              android:paddingBottom="5dp"
+              android:paddingTop="5dp"
+              android:gravity="center_vertical"
+              android:background="@color/whit"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_search_ify"
+            android:layout_height="match_parent">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/searchIcon"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="15dp"
+                   android:src="@drawable/search"/>
+
+        <!--<View-->
+                <!--android:id="@+id/line"-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_toRightOf="@+id/searchIcon"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:background="@color/colorBackground"/>-->
+
+        <TextView
+                android:id="@+id/line_hint"
+                android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/searchIcon"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="15dp"
+                  android:textColor="@color/colorifySecondText"
+                  android:textSize="14sp"
+                  android:layout_height="wrap_content"
+                  android:hint="SK II"/>
+        <ImageView
+                android:id="@+id/scan"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sweep"/>
+
+    </RelativeLayout>
+
+
+        <ImageView
+                android:id="@+id/news_btn"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/news"/>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/whit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+        <LinearLayout
+                android:id="@+id/backLayout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fanhui"/>
+
+        </LinearLayout>
+
+        <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/goods_tab"
+                android:layout_width="190dp"
+                android:layout_height="44dp"
+                android:background="#ffffff"
+                android:layout_centerInParent="true"
+                app:tl_textSelectColor="#1a1a1a"
+                app:tl_textUnselectColor="@color/colorSecondText"
+                app:tl_iconVisible="false"
+                app:tl_textBold="SELECT"
+                app:tl_indicator_color="#da2a20"
+                app:tl_indicator_width="45dp"
+                app:tl_textsize="16sp"/>
+        <LinearLayout
+                android:id="@+id/shareLayout"
+                android:layout_width="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+            android:id="@+id/goods_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
+
+

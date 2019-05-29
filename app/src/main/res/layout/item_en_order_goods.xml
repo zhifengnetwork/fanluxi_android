@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whit"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="8dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/goodsIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/colorBackground"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/goodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="#4d4d4d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/goodsPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sizeLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/goodsNum"
+            android:text="￥0.00"
+            android:textColor="@color/colorBlackText"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/goodsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sizeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:text="×1"
+            android:textColor="@color/colorBlackText"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

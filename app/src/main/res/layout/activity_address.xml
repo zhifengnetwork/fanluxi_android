@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/colorBackground"
+                android:fitsSystemWindows="true"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/myToolBar"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/newAddress"
+            android:layout_marginBottom="20dp"
+            android:overScrollMode="never"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/newAddress"
+            android:layout_width="340dp"
+            android:layout_height="44dp"
+            android:textSize="15sp"
+            android:textColor="@color/whit"
+            android:background="@drawable/selector_btn_big"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="新建收货地址"/>
+
+</RelativeLayout>
+

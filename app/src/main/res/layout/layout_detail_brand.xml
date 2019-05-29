@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/whit"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="55dp"
+                   android:src="@drawable/apple_loge"
+                   android:layout_marginLeft="10dp"
+                   android:id="@+id/shopIcon"
+                   android:layout_marginTop="10dp"
+                   android:layout_height="55dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/shopIcon"
+                  android:id="@+id/shopName"
+                  android:textSize="14sp"
+                  android:textColor="@color/colorBlackText"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:text="天乐数码旗舰店"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@+id/shopName"
+                  android:layout_marginTop="3dp"
+                  android:id="@+id/inSellTxt"
+                  android:textSize="14sp"
+                  android:textColor="@color/colorBlackText"
+                  android:layout_alignLeft="@+id/shopName"
+                  android:text="在售商品"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/inSellNum"
+                  android:layout_alignTop="@+id/inSellTxt"
+                  android:textSize="14sp"
+                  android:textColor="@color/colorBlackText"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_toRightOf="@+id/inSellTxt"
+                  android:text="69"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/inSellNum"
+                  android:layout_alignTop="@+id/inSellTxt"
+                  android:textSize="14sp"
+                  android:textColor="@color/colorBlackText"
+                  android:id="@+id/unit"
+                  android:text="件"/>
+
+        <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:drawableRight="@drawable/arrow_b"
+                android:drawablePadding="10dp"
+                android:textColor="#e60b30"
+                android:text="进入品牌"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/brandRecyclerView"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

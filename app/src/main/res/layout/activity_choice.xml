@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--导航头布局-->
+<include layout="@layout/layout_choice_toolbar"/>
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_figure"
+    />
+
+  <!--国家导航布局 包含头部图片空间-->
+    <include layout="@layout/layout_choice_country"/>
+
+
+    <!--中间商品左右滑动布局-->
+    <include layout="@layout/layout_choice_centre"/>
+
+
+        <!--轮播海报布局-->
+    <include layout="@layout/layout_choice_poster"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/whit"
+              android:layout_marginTop="20dp"
+              android:layout_height="wrap_content">
+
+
+    <!--<com.flyco.tablayout.SlidingTabLayout-->
+    <!--android:id="@+id/sameTabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:background="@color/whit"-->
+    <!--app:tl_indicator_color="@color/colorPrimary"-->
+    <!--app:tl_indicator_width="30dp"-->
+    <!--app:tl_tab_space_equal="true"-->
+    <!--app:tl_textSelectColor="@color/colorPrimary"-->
+    <!--app:tl_textUnselectColor="@color/colorSecondText"-->
+    <!--app:tl_textsize="15sp"-->
+    <!--app:tl_underline_color="@color/colorBackground"-->
+    <!--app:tl_underline_gravity="BOTTOM"-->
+    <!--app:tl_underline_height="1dp"/>-->
+
+
+    <!--<com.flyco.tablayout.CommonTabLayout-->
+    <!--android:id="@+id/sameTabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="54dp"-->
+    <!--android:background="#ffffff"-->
+    <!--app:tl_iconHeight="23dp"-->
+    <!--app:tl_iconWidth="23dp"-->
+    <!--app:tl_indicator_color="#2C97DE"-->
+    <!--app:tl_indicator_height="0dp"-->
+    <!--app:tl_textSelectColor="#2C97DE"-->
+    <!--app:tl_textUnselectColor="#66000000"-->
+    <!--app:tl_textsize="12sp"-->
+    <!--app:tl_underline_color="#DDDDDD"-->
+    <!--app:tl_underline_height="1dp"/>-->
+
+    <!--<com.flyco.tablayout.SegmentTabLayout-->
+    <!--android:id="@+id/sameTabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--app:tl_bar_color="#ffffff"-->
+    <!--app:tl_indicator_color="#151514"-->
+    <!--app:tl_indicator_corner_radius="5dp"-->
+    <!--app:tl_tab_padding="20dp"/>-->
+
+    <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/sameTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            app:tl_textSelectColor="@color/colorPrimaryText"
+            app:tl_textUnselectColor="@color/colorSecondText"
+            app:tl_iconVisible="false"
+            app:tl_textBold="SELECT"
+            app:tl_indicator_color="@color/colorPrimaryText"
+            app:tl_indicator_width="30dp"
+            app:tl_textsize="14sp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1px"
+          android:background="@color/colorLine"/>
+
+    <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"/>
+
+    <!--  相似推荐  重写 拦截左右滑动 -->
+    <!--<com.zf.mart.view.NoScrollViewPager-->
+    <!--android:id="@+id/sameViewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_height="360dp"/>-->
+
+
+</LinearLayout>

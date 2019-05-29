@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whit"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/goodsIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorBackground"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp" />
+
+        <TextView
+            android:id="@+id/goodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/goodsIcon"
+            android:maxLines="2"
+            android:paddingRight="10dp"
+            android:text="HAODUOYI2018时尚卫衣秋季新品女装 欧美时尚字母印花宽松休闲套头卫衣"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shopName"
+            android:layout_alignLeft="@+id/goodsName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#d21018"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="399.0"
+                android:textColor="#d21018"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/evaluate"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/goodsIcon"
+            android:drawableRight="@drawable/arrow_b"
+            android:drawablePadding="5dp"
+            android:text="MODA专营店"
+            android:textColor="@color/colorBlackText"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/goodsIcon"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/goodsIcon"
+            android:text="0条好评"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sellNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/goodsIcon"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/evaluate"
+            android:text="销量:10万"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/payTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/goodsIcon"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/sellNum"
+            android:text="已付款:"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/havePay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/goodsIcon"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/payTxt"
+            android:text="0.00+"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp" />
+
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignBottom="@+id/goodsIcon"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="#6f6f6f"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="查看产品使用说明"/>-->
+
+    </RelativeLayout>
+
+    <!--<View android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/colorLine"/>-->
+
+</LinearLayout>

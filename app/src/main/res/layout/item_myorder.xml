@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@color/whit"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp">
+
+        <TextView
+                android:id="@+id/addTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019/02/03  00:25:50"
+                android:textColor="@color/colorBlackText"
+                android:textSize="11sp"/>
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="status"
+                android:textColor="#f20c0c"
+                android:textSize="12sp"/>
+
+        <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorLine"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"/>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/goodsIcon"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:background="@color/colorLine"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/goodsName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="@color/colorBlackText"-->
+    <!--android:layout_toRightOf="@+id/goodsIcon"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:maxLines="2"-->
+    <!--android:text="HAODUOYI2018时尚卫衣秋季新品女装 欧美时尚字母印花宽松休闲套头卫衣"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/goodsSize"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/goodsIcon"-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:layout_below="@+id/goodsName"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_marginTop="7dp"-->
+    <!--android:textColor="@color/colorBlackText"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="颜色:蓝色 尺寸:M码"/>-->
+
+    <!--&lt;!&ndash; 非实体商品显示截止使用时间 &ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/goodsCutTime"-->
+    <!--android:layout_toRightOf="@+id/goodsIcon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:layout_below="@+id/goodsName"-->
+    <!--android:layout_marginTop="7dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:visibility="invisible"-->
+    <!--android:textColor="#f11010"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="截止时间2019年02月31日"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/goodsPrice"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/goodsIcon"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/goodsName"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="@color/colorBlackText"-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:text="￥256×2"/>-->
+
+    <!--<TextView android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignBottom="@+id/goodsIcon"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#6f6f6f"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:text="查看产品使用说明"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorLine"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp">
+
+        <!--<TextView-->
+        <!--android:id="@+id/shopName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="欧欧记"-->
+        <!--android:textColor="@color/colorPrimaryText"-->
+        <!--android:textSize="12sp" />-->
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/totalNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共-件"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="12sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="应付总额"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="12sp"/>
+
+        <TextView
+                android:id="@+id/shouldPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="￥0.00"
+                android:textColor="#f72c0b"
+                android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <include
+            layout="@layout/layout_order_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

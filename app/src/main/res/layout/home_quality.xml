@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@color/whit"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/quality_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/quality_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩3C"
+                android:textColor="@color/menu_tv"
+                android:textSize="@dimen/sp_16"/>
+
+        <TextView
+                android:id="@+id/quality_detils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quality_title1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="iphone6低至2499元疯抢"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_12"/>
+
+        <ImageView
+                android:id="@+id/qulity_iv1"
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_below="@id/quality_detils"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g1"/>
+
+        <ImageView
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_alignBottom="@id/qulity_iv1"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_toRightOf="@id/qulity_iv1"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/quality_root">
+
+        <TextView
+                android:id="@+id/quality_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="玩3C"
+                android:textColor="@color/menu_tv"
+                android:textSize="@dimen/sp_16"/>
+
+        <TextView
+                android:id="@+id/quality_detil1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quality_title2"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="iphone6低至2499元疯抢"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_12"/>
+
+        <ImageView
+                android:id="@+id/qulity_iv2"
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_below="@id/quality_detil1"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g3"/>
+
+        <ImageView
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_alignBottom="@id/qulity_iv2"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_toRightOf="@id/qulity_iv2"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g4"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/quality_root1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quality_root"
+            android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+                android:id="@+id/quality_title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="玩3C"
+                android:textColor="@color/menu_tv"
+                android:textSize="@dimen/sp_16"/>
+
+        <TextView
+                android:id="@+id/quality_detil4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quality_title4"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="iphone6低至2499元疯抢"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_12"/>
+
+        <ImageView
+                android:id="@+id/qulity_iv5"
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_below="@id/quality_detil4"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g5"/>
+
+        <ImageView
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_alignBottom="@id/qulity_iv5"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_toRightOf="@id/qulity_iv5"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g6"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quality_root"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@id/quality_root1">
+
+        <TextView
+                android:id="@+id/quality_title6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="玩3C"
+                android:textColor="@color/menu_tv"
+                android:textSize="@dimen/sp_16"/>
+
+        <TextView
+                android:id="@+id/quality_detil6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quality_title6"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="iphone6低至2499元疯抢"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_12"/>
+
+        <ImageView
+                android:id="@+id/qulity_iv6"
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_below="@id/quality_detil6"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g7"/>
+
+        <ImageView
+                style="@style/quality_height"
+                android:layout_width="@dimen/dp_90"
+                android:layout_alignBottom="@id/qulity_iv6"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_toRightOf="@id/qulity_iv6"
+                android:layout_weight="1"
+                android:src="@mipmap/home_quality_g8"/>
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+            android:id="@+id/qualityBanner"
+            android:layout_below="@+id/quality_root1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            app:delay_time="2000"
+            android:layout_height="160dp"/>
+
+</RelativeLayout>

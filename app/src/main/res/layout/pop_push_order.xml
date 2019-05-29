@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   app:cardElevation="0dp"
+                                   android:id="@+id/orderPushLayout"
+                                   app:cardCornerRadius="10dp"
+                                   android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/whit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:layout_marginTop="45dp"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorBlackText"
+                      android:textSize="14sp"
+                      android:text="收货地址"/>
+
+            <Space android:layout_width="0dp"
+                   android:layout_height="1dp"
+                   android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/addAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorSecondText"
+                    android:drawableRight="@drawable/xiajiantou"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="请添加收货地址"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorBlackText"
+                      android:textSize="14sp"
+                      android:text="配送"/>
+
+            <Space android:layout_width="0dp"
+                   android:layout_height="1dp"
+                   android:layout_weight="1"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorSecondText"
+                      android:textSize="14sp"
+                      android:drawableRight="@drawable/xiajiantou"
+                      android:drawablePadding="3dp"
+                      android:gravity="center_vertical"
+                      android:text="第三方快递"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorBlackText"
+                      android:textSize="14sp"
+                      android:text="优惠券"/>
+
+            <Space android:layout_width="0dp"
+                   android:layout_height="1dp"
+                   android:layout_weight="1"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorSecondText"
+                      android:textSize="14sp"
+                      android:drawableRight="@drawable/xiajiantou"
+                      android:drawablePadding="3dp"
+                      android:gravity="center_vertical"
+                      android:text="暂无可用"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorBlackText"
+                      android:textSize="14sp"
+                      android:text="红包"/>
+
+            <Space android:layout_width="0dp"
+                   android:layout_height="1dp"
+                   android:layout_weight="1"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorSecondText"
+                      android:textSize="14sp"
+                      android:drawableRight="@drawable/xiajiantou"
+                      android:drawablePadding="3dp"
+                      android:gravity="center_vertical"
+                      android:text="暂无可用"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorBlackText"
+                      android:textSize="14sp"
+                      android:text="应付总额"/>
+
+            <Space android:layout_width="0dp"
+                   android:layout_height="1dp"
+                   android:layout_weight="1"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#ee4141"
+                      android:textSize="18sp"
+                      android:drawablePadding="3dp"
+                      android:gravity="center_vertical"
+                      android:text="￥56"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:orientation="horizontal">
+
+            <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:button="@null"
+                    android:layout_marginRight="8dp"
+                    android:drawableLeft="@drawable/selector_pop_check"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorSecondText"
+                      android:textSize="14sp"
+                      android:text="本人同意并接受以下协议"/>
+
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/submit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/whit"
+                android:text="提交订单"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

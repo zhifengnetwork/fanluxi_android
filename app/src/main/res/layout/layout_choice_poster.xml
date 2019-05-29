@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="25dp"
+              android:layout_marginBottom="30dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#151515"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:text="想看世界跟我走"
+    />
+    <View
+            android:layout_width="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#151515"
+            android:layout_gravity="center_horizontal"
+
+    />
+    <com.zhouwei.mzbanner.MZBannerView
+            android:id="@+id/choice_banner"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="23dp"
+            app:open_mz_mode="true"
+            app:canLoop="true"
+            app:middle_page_cover="false"
+    />
+
+</LinearLayout>

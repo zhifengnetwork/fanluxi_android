@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+
+    <View android:layout_width="0dp" android:layout_height="1px"
+          android:layout_weight="1"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@color/colorSecondText"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="15sp"
+              android:textColor="@color/colorBlackText"
+              android:layout_height="wrap_content"
+              android:text="猜您喜欢的店铺"/>
+
+    <View android:layout_width="0dp" android:layout_height="1px"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:background="@color/colorSecondText"/>
+
+
+</LinearLayout>

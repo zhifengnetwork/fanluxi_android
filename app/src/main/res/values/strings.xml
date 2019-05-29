@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">DC商城</string>
+
+    <string name="refresh_finish">刷新完成</string>
+    <string name="refresh_pulling">下拉刷新</string>
+    <string name="refresh_release">释放立即刷新</string>
+    <string name="refresh_refreshing">正在刷新</string>
+    <string name="refresh_failed">刷新失败</string>
+
+    <string name="load_finish">加载完成</string>
+    <string name="load_failed">加载失败</string>
+    <string name="load_pulling">上拉加载更多</string>
+    <string name="load_release">释放立即加载</string>
+    <string name="load_loading">加载中</string>
+    <string name="load_noting">没有更多数据了</string>
+
+    <string name="filterNumLetter">0123456789zxcvbnmasdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP</string>
+    <string name="img_success">图片上传成功</string>
+
+    <string name="yun_fei">运\t\t\t\t费</string>
+
+    <string name="html_exa">
+
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <title>这里填写标题</title>
+                <meta name="keywords" content="这里填写关键词"/>
+                <meta name="description" content="这里填写说明内容"/>
+
+                <script language="JavaScript" type="text/javascript">
+                    <!--JS代码位置-->
+                </script>
+
+                <style type="text/css">
+                    <!--CSS样式代码位置-->
+                </style>
+
+            </head>
+
+            <body>
+
+                这里填写HTML代码
+
+                <p>
+                    这是段落
+                </p>
+
+
+                <p>
+                    这是段落
+                </p>
+
+                <p>
+                    这是段落
+                </p>
+
+                <p>
+                    这是段落
+                </p>
+
+                <p>
+                    这是段落
+                </p>
+
+                <p>
+                    这是段落
+                </p>
+
+                <p>
+                    这是段落
+                </p>
+
+
+                <img src="http://www.pptok.com/wp-content/uploads/2012/08/xunguang-4.jpg" width="258" height="39"/>
+
+            </body>
+        </html>
+
+
+    </string>
+
+</resources>

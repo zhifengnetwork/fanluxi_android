@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:background="@color/whit"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/allEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="商品评价"
+                android:textColor="@color/colorBlackText"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+        <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(4445454)"
+                android:textColor="@color/colorBlackText"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="好评"
+                android:textColor="#e60b30"
+                android:textSize="13sp"/>
+
+        <TextView
+                android:id="@+id/high_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_b"
+                android:drawablePadding="10dp"
+                android:text="98.3%"
+                android:textColor="#e60b30"
+                android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/evaRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine"/>
+
+    <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingBottom="15dp">-->
+
+        <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:text="问大家"-->
+                <!--android:textColor="@color/colorBlackText"-->
+                <!--android:textSize="13sp"-->
+                <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="(84)"-->
+                <!--android:textColor="@color/colorBlackText"-->
+                <!--android:textSize="13sp"-->
+                <!--android:textStyle="bold"/>-->
+
+        <!--<Space-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_weight="1"/>-->
+
+        <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/arrow_b"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:id="@+id/askRecyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:nestedScrollingEnabled="false"-->
+            <!--android:overScrollMode="never"/>-->
+
+</LinearLayout>

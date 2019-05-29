@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/empty_view"
+              android:layout_height="match_parent">
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="80dp"
+               android:src="@drawable/shopping_cart"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#cccccc"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="20dp"
+              android:text="购物车还空着呢!"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#cccccc"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginBottom="50dp"
+              android:layout_marginTop="10dp"
+              android:text="快去挑选自己心仪的物品吧~"/>
+
+</LinearLayout>

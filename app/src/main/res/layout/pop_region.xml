@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/whit"
+              android:layout_height="400dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="省"/>
+
+        <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="市"/>
+
+        <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="区"/>
+
+        <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="镇"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <com.contrarywind.view.WheelView
+                android:id="@+id/provincePic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+        <com.contrarywind.view.WheelView
+                android:id="@+id/cityPic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+        <com.contrarywind.view.WheelView
+                android:id="@+id/areaPic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+        <!--<cn.carbswang.android.numberpickerview.library.NumberPickerView-->
+        <!--android:id="@+id/provincePic"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--app:npv_DividerColor="@color/colorPrimaryDark"-->
+        <!--app:npv_DividerMarginLeft="20dp"-->
+        <!--app:npv_DividerMarginRight="20dp"-->
+        <!--app:npv_ItemPaddingVertical="15dp"-->
+        <!--app:npv_ShowCount="3"-->
+        <!--app:npv_WrapSelectorWheel="false"/>-->
+
+        <!--<cn.carbswang.android.numberpickerview.library.NumberPickerView-->
+        <!--android:id="@+id/cityPic"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--app:npv_DividerColor="@color/colorPrimaryDark"-->
+        <!--app:npv_DividerMarginLeft="20dp"-->
+        <!--app:npv_DividerMarginRight="20dp"-->
+        <!--app:npv_ItemPaddingVertical="15dp"-->
+        <!--app:npv_ShowCount="3"-->
+        <!--app:npv_WrapSelectorWheel="false"/>-->
+
+    </LinearLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+    <!--android:id="@+id/regionRecyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+</LinearLayout>

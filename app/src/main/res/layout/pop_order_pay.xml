@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whit"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/fanhui"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="请选择支付方式"
+                android:textColor="@color/colorBlackText"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/close"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <!--<View android:layout_width="match_parent" android:layout_height="1px"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/colorLine"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请在0小时30分钟内完成支付"
+                android:textColor="@color/colorSecondText"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="金额"
+                android:textColor="@color/colorSecondText"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="￥1476.0元"
+                android:textColor="#ee4141"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <!--<RadioButton-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:button="@null"-->
+        <!--android:drawableRight="@drawable/selector_pop_check"-->
+        <!--android:paddingTop="12dp"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:text="银行卡快捷支付"-->
+        <!--android:textColor="@color/colorBlackText"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/colorLine" />-->
+
+        <!--<RadioButton-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:button="@null"-->
+        <!--android:drawableRight="@drawable/selector_pop_check"-->
+        <!--android:paddingTop="12dp"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:text="网易支付"-->
+        <!--android:textColor="@color/colorBlackText"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/colorLine" />-->
+
+        <!--<RadioButton-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:button="@null"-->
+        <!--android:drawableRight="@drawable/selector_pop_check"-->
+        <!--android:paddingTop="12dp"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:text="支付宝"-->
+        <!--android:textColor="@color/colorBlackText"-->
+        <!--android:textSize="14sp" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/wxpay_icon1" />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/alipay_logo" />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/weChatPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/selector_pop_check"
+                    android:gravity="center_vertical"
+                    android:text="微信支付"
+                    android:textColor="@color/colorBlackText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/aliPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_pop_check"
+                    android:gravity="center_vertical"
+                    android:text="支付宝"
+                    android:textColor="@color/colorBlackText"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/wxpay_icon1"/>-->
+
+        <!---->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/alipay_logo"/>-->
+
+        <!---->
+
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <!--</RadioGroup>-->
+
+        <!--<EditText android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:hint="收货人姓名(请使用真实姓名)"-->
+        <!--android:textSize="12sp"-->
+        <!--android:background="@drawable/shape_search_input"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:paddingLeft="15sp"-->
+        <!--android:paddingRight="15sp"-->
+        <!--android:orientation="horizontal"/>-->
+
+        <!--<EditText android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:hint="手机号码"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:textSize="12sp"-->
+        <!--android:background="@drawable/shape_search_input"-->
+        <!--android:paddingLeft="15sp"-->
+        <!--android:paddingRight="15sp"-->
+        <!--android:orientation="horizontal"/>-->
+
+        <!--<EditText android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:hint="所在地区"-->
+        <!--android:textSize="12sp"-->
+        <!--android:background="@drawable/shape_search_input"-->
+        <!--android:paddingLeft="15sp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:paddingRight="15sp"-->
+        <!--android:orientation="horizontal"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/detailAddress"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:hint="街道、小区门牌等详细地址"-->
+        <!--android:textSize="12sp"-->
+        <!--android:background="@drawable/shape_search_input"-->
+        <!--android:paddingLeft="15sp"-->
+        <!--android:paddingRight="15sp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:orientation="horizontal"/>-->
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/confirmPay"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorRedButton"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/whit"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

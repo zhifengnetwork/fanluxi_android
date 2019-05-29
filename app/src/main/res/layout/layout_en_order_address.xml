@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_round_whit_big"
+                android:paddingTop="15dp"
+                android:paddingBottom="20dp">
+
+    <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userAddress"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+    <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userName"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/userName"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+    <ImageView
+            android:id="@+id/locationImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/dingwei"/>
+
+    <TextView
+            android:id="@+id/userAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/locationImg"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/locationImg"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="13sp"/>
+
+    <ImageView
+            android:id="@+id/arrowIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_arrow"/>
+
+</RelativeLayout>

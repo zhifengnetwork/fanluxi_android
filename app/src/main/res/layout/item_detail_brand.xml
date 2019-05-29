@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="110dp"
+                android:layout_height="160dp">
+
+    <ImageView android:layout_width="95dp"
+               android:layout_height="95dp"
+               android:id="@+id/goodsIcon"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="3dp"
+               android:src="@drawable/pi_picture5"/>
+
+    <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_below="@+id/goodsIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="2"
+            android:gravity="center"
+            android:text="OPPO R15 玄彩版某某代言"/>
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#e31839"
+              android:id="@+id/rmb"
+              android:layout_marginBottom="10dp"
+              android:layout_centerHorizontal="true"
+              android:layout_alignParentBottom="true"
+              android:text="￥2255"/>
+
+</RelativeLayout>

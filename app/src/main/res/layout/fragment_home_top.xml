@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <com.youth.banner.Banner
+            android:id="@+id/topBanner"
+            android:layout_width="match_parent"
+            app:delay_time="2000"
+            android:layout_height="150dp"/>
+
+    <!--<me.foji.widget.AutoScrollViewPager-->
+    <!--android:id="@+id/viewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_120"-->
+    <!--app:autoScrollEnable="true"-->
+    <!--app:timeInterval="4000"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/indictor_root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@id/viewPager"-->
+    <!--android:layout_marginBottom="@dimen/dp_10"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"/>-->
+
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+    <!--android:id="@+id/fragment_home_head_menu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/viewPager"-->
+    <!--android:layout_marginTop="@dimen/dp_10"-->
+    <!--android:background="@color/home_menu_bg"/>-->
+
+</RelativeLayout>

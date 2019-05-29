@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:srlEnableAutoLoadMore="true"
+    app:srlEnableFooterFollowWhenLoadFinished="true"
+    app:srlEnableFooterTranslationContent="true">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlAccentColor="@color/colorSecondText"
+        app:srlDrawableProgress="@drawable/ic_progress_puzzle"
+        app:srlEnableLastTime="false"
+        app:srlPrimaryColor="@color/colorBackground"
+        app:srlTextFailed="@string/refresh_failed"
+        app:srlTextFinish="@string/refresh_finish"
+        app:srlTextPulling="@string/refresh_pulling"
+        app:srlTextRefreshing="@string/refresh_refreshing"
+        app:srlTextRelease="@string/refresh_release" />
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multipleStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyView="@layout/layout_state_empty_order">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+    </com.classic.common.MultipleStatusView>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlDrawableProgress="@drawable/ic_progress_puzzle"
+        app:srlFinishDuration="0"
+        app:srlTextFailed="@string/load_failed"
+        app:srlTextFinish="@string/load_finish"
+        app:srlTextLoading="@string/load_loading"
+        app:srlTextNothing="@string/load_noting"
+        app:srlTextPulling="@string/load_pulling"
+        app:srlTextRelease="@string/load_release" />
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

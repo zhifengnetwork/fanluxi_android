@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_round_line">
+
+        <ImageView
+            android:id="@+id/goodsIcon"
+            android:layout_width="312dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:background="@color/colorBackground" />
+
+        <TextView
+            android:id="@+id/goodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goodsIcon"
+            android:layout_alignLeft="@+id/goodsIcon"
+            android:layout_marginTop="10dp"
+            android:text="耐克男鞋2018新款夏季"
+            android:textColor="@color/colorBlackText"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goodsName"
+            android:layout_alignLeft="@+id/goodsIcon"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="bottom"
+            android:text="￥79"
+            android:textColor="@color/colorPrice"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/price"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/price"
+            android:text="起拍"
+            android:textColor="@color/colorBlackText"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/goAuction"
+            android:layout_width="75dp"
+            android:layout_height="43dp"
+            android:layout_alignRight="@+id/goodsIcon"
+            android:layout_alignBottom="@+id/price"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_button_small"
+            android:gravity="center"
+            android:text="参与竞拍"
+            android:textColor="@color/whit" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shape_round_line"
+        android:gravity="center"
+        android:text="--月--号 --:--:-- 准时开拍"
+        android:textColor="@color/colorBlackText"
+        android:textSize="14sp" />
+
+</RelativeLayout>

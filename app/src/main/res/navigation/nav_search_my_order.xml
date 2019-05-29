@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_search_my_order">
+
+    <fragment
+            android:id="@+id/myOrderFragment"
+            android:name="com.zf.fanluxi.ui.fragment.MyOrderFragment"
+            android:label="我的订单"
+            tools:layout="@layout/fragment_auction">
+
+    </fragment>
+
+</navigation>

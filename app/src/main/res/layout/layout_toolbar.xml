@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/whit"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/fanhui" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/colorBlackText"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rightIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_all2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editOperation"
+        android:layout_width="50dp"
+        android:layout_height="27dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_small_red_btn"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="@color/whit"
+        android:visibility="gone" />
+
+
+</LinearLayout>

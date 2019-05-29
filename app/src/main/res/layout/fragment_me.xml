@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:srlEnableAutoLoadMore="true"
+    app:srlEnableFooterFollowWhenLoadFinished="true"
+    app:srlEnableLoadMore="false">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlAccentColor="@color/colorSecondText"
+        app:srlDrawableProgress="@drawable/ic_progress_puzzle"
+        app:srlEnableLastTime="false"
+        app:srlPrimaryColor="@color/colorBackground"
+        app:srlTextFailed="@string/refresh_failed"
+        app:srlTextFinish="@string/refresh_finish"
+        app:srlTextPulling="@string/refresh_pulling"
+        app:srlTextRefreshing="@string/refresh_refreshing"
+        app:srlTextRelease="@string/refresh_release" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/me_nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <!--个人信息-->
+            <include layout="@layout/layout_info" />
+
+
+
+            <!--我的订单-->
+            <include layout="@layout/layout_order" />
+
+            <!--我的钱包-->
+            <include layout="@layout/layout_wallet" />
+
+            <!-- 公益 -->
+            <include
+                layout="@layout/layout_benefit"
+                android:visibility="gone" />
+
+            <!--我的专栏-->
+            <include layout="@layout/layout_zhuanlan" />
+
+            <!-- 为你推荐-->
+            <include
+                layout="@layout/layout_wntj"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recommendRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlDrawableProgress="@drawable/ic_progress_puzzle"
+        app:srlFinishDuration="0"
+        app:srlTextFailed="@string/load_failed"
+        app:srlTextFinish="@string/load_finish"
+        app:srlTextLoading="@string/load_loading"
+        app:srlTextNothing="@string/load_noting"
+        app:srlTextPulling="@string/load_pulling"
+        app:srlTextRelease="@string/load_release" />
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

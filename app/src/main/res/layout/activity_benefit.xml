@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:fitsSystemWindows="true"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ms_g3"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@color/whit"
+                    android:orientation="horizontal">
+
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimaryText"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          android:text="我的公益账户"/>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimaryText"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          android:text="公益捐赠10次"/>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimaryText"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          android:text="公益时长"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorLine"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/whit"
+                    android:orientation="horizontal">
+
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:gravity="bottom|center_horizontal"
+                              android:text="捐赠金额"/>
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:gravity="top|center_horizontal"
+                              android:text="1111"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimaryBtn"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/whit"
+                            android:textSize="10sp"
+                            android:lineSpacingExtra="3dp"
+                            android:text="相当于给留守儿童讲睡得故事10天"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:gravity="center_horizontal|bottom"
+                              android:text="爱心次数(笔)"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="13"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@color/whit"
+                          android:layout_marginTop="10dp"
+                          android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:text="我的爱心动态"
+                          android:padding="10dp"
+                          android:textSize="12sp"
+                          android:textColor="@color/colorPrimaryText"
+                          android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:overScrollMode="never"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

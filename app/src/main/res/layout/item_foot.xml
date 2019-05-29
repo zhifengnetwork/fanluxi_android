@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:background="@drawable/shape_round_whit_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <CheckBox android:layout_width="wrap_content"
+              android:button="@null"
+              android:drawableLeft="@drawable/selector_all_choose"
+              android:textSize="12sp"
+              android:layout_marginLeft="10dp"
+              android:id="@+id/checkBox"
+              android:padding="10dp"
+              android:textColor="@color/colorPrimaryText"
+              android:layout_centerVertical="true"
+              android:visibility="gone"
+              android:layout_height="wrap_content"/>
+
+    <ImageView android:layout_width="75dp"
+               android:layout_height="75dp"
+               android:layout_marginLeft="8dp"
+               android:layout_toRightOf="@+id/checkBox"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:id="@+id/goodsIcon"
+               android:src="@drawable/ic_figure"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxLines="2"
+              android:layout_toRightOf="@+id/goodsIcon"
+              android:layout_alignTop="@+id/goodsIcon"
+              android:layout_marginLeft="15dp"
+              android:textSize="13sp"
+              android:textColor="#1a1a1a"
+              android:id="@+id/goodsName"
+              android:text="这是一个小米手机 2011年出品 安卓系统"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_above="@+id/hasPay"
+              android:layout_alignLeft="@+id/goodsName"
+              android:id="@+id/rmb"
+              android:layout_marginBottom="2dp"
+              android:textSize="11sp"
+              android:textColor="#e51c23"
+              android:text="￥"/>
+
+    <TextView
+            android:id="@+id/shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/hasPay"
+            android:layout_toRightOf="@+id/rmb"
+            android:textSize="18sp"
+            android:textColor="#e51c23"
+
+            android:text="389"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/hasPay"
+              android:text="已付款2"
+              android:layout_toRightOf="@+id/goodsIcon"
+              android:textSize="12sp"
+              android:textColor="@color/colorSecondText"
+              android:layout_alignLeft="@+id/goodsName"
+              android:layout_marginBottom="0dp"
+              android:layout_alignBottom="@+id/goodsIcon"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/hasEva"
+              android:layout_toRightOf="@+id/hasPay"
+              android:textSize="12sp"
+              android:textColor="@color/colorSecondText"
+              android:layout_marginLeft="15dp"
+              android:layout_alignTop="@+id/hasPay"
+              android:text="已评价10"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/shape_round_red"
+              android:textColor="@color/colorPrice"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:paddingTop="2dp"
+              android:paddingBottom="2dp"
+              android:layout_marginRight="10dp"
+              android:layout_alignBottom="@+id/hasPay"
+              android:text="购买"/>
+
+</RelativeLayout>

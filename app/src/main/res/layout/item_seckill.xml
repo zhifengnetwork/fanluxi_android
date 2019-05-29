@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whit"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:background="@color/colorBackground" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="修身百搭白色T恤5007"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="短袖T恤2019夏季新款纯色T恤针织衫女装修身"
+        android:textColor="@color/colorSecondText"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/icon"
+        android:background="@drawable/shape_round_red"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        android:text="4.6折"
+        android:textColor="@color/colorPrice"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discount"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="￥145"
+        android:textColor="@color/colorPrice"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/pay"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_button_small"
+        android:gravity="center"
+        android:text="马上抢"
+        android:textColor="@color/whit"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="￥289"
+        android:textColor="@color/colorSecondText"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/price"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/price"
+        android:text="仅剩819件"
+        android:textColor="@color/colorSecondText"
+        android:textSize="10sp" />
+
+    <!-- 设置高度在自定义view里面 -->
+    <com.zf.fanluxi.view.LineLoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_alignTop="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="12dp"
+        app:barIsGradient="true" />
+
+</RelativeLayout>

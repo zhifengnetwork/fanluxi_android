@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zf.fanluxi.view.gridview.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:id="@+id/squarerly"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="@color/whit"
+                                                   android:padding="5dp">
+    <LinearLayout
+            android:id="@+id/calendar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+
+    >
+        <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="14sp" />
+
+    </LinearLayout>
+</com.zf.fanluxi.view.gridview.SquareRelativeLayout>

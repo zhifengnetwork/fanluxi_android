@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableAutoLoadMore="true"
+            app:srlEnableFooterFollowWhenLoadFinished="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                app:srlPrimaryColor="@color/colorBackground"
+                app:srlAccentColor="@color/colorSecondText"
+                app:srlTextPulling="@string/refresh_pulling"
+                app:srlTextRelease="@string/refresh_release"
+                app:srlTextRefreshing="@string/refresh_refreshing"
+                app:srlTextFinish="@string/refresh_finish"
+                app:srlTextFailed="@string/refresh_failed"
+                app:srlEnableLastTime="false"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle"
+                android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle"
+                app:srlFinishDuration="0"
+                app:srlTextFailed="@string/load_failed"
+                app:srlTextFinish="@string/load_finish"
+                app:srlTextLoading="@string/load_loading"
+                app:srlTextNothing="@string/load_noting"
+                app:srlTextPulling="@string/load_pulling"
+                app:srlTextRelease="@string/load_release"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

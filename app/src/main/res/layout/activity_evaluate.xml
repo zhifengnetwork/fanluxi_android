@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/goodsRecyclerView"
+                android:layout_width="match_parent"
+                android:descendantFocusability="afterDescendants"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never" />
+
+            <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/shape_eva_edit"-->
+            <!--android:gravity="start"-->
+            <!--android:hint="写下购买体会和使用感受来帮助其他小伙伴~"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:id="@+id/imgRecyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:overScrollMode="never" />-->
+
+            <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="匿名评价"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingBottom="20dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="评分"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="满意请给5分哦"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/colorLine" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingBottom="10dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="商品符合度"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/goodsStar"-->
+            <!--style="@style/evaRatingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:stepSize="1" />-->
+            <!---->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingBottom="10dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="店家服务态度"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/severStar"-->
+            <!--style="@style/evaRatingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:stepSize="1" />-->
+            <!---->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingBottom="10dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="物流发货速度"-->
+            <!--android:textColor="@color/colorPrimaryText"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/shippingStar"-->
+            <!--style="@style/evaRatingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:stepSize="1" />-->
+            <!---->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/shape_auction_btn"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/whit"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

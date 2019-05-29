@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f5f5f5"
+>
+    <include layout="@layout/layout_toolbar"/>
+
+
+    <!--<androidx.viewpager.widget.ViewPager-->
+            <!--android:id="@+id/bonusViewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"/>-->
+    <ImageView
+            android:id="@+id/bonus_ad_img"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+        <RelativeLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_bonus_ly"
+                android:layout_height="70dp">
+            <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlackText"
+                    android:text="账户余额￥651元"/>
+            <TextView
+                    android:id="@+id/cash_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlackText"
+                    android:background="@drawable/tixian"
+                    android:text="提现"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_bonus_ly">
+
+            <TextView
+                    android:id="@+id/profit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlackText"/>
+            <TextView
+                    android:id="@+id/property"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right|center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlackText"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_bonus_ly"
+                android:layout_height="135dp"
+                android:orientation="horizontal">
+            <LinearLayout
+                    android:id="@+id/buy_member"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="#f5f5f5"
+                    android:layout_weight="1">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/shengji"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlackText"
+                        android:text="升级会员"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/share_goods"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="#f5f5f5">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/shangpin"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlackText"
+                        android:text="分润商品"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/my_member"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#f5f5f5"
+                    android:layout_weight="1">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/huiyuan"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlackText"
+                        android:text="推荐会员"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#f5f5f5"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="12dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/guanli"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlackText"
+                        android:text="账户管理"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

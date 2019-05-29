@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/infoFragment"
+            android:id="@+id/nav_info">
+
+    <fragment android:id="@+id/infoFragment"
+              android:name="com.zf.fanluxi.ui.fragment.info.InfoFragment"
+              android:label="个人资料"
+              tools:layout="@layout/fragment_info">
+
+    </fragment>
+
+</navigation>

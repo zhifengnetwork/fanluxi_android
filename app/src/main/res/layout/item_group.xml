@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        app:cardElevation="0dp"
+        android:background="@color/whit"
+        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBackground"/>
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_height="wrap_content"
+                android:text="日用品小百货"/>
+
+        <TextView
+                android:id="@+id/goodsName"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="11sp"
+                android:textColor="@color/colorSecondText"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:text="市场居家用 1个绿色 送一个蓝色 "/>
+
+
+        <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrice"
+                android:text="￥15"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

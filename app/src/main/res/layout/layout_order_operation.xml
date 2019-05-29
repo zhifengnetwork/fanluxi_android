@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whit"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/shipping"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#d5efff"
+        android:gravity="center"
+        android:text="查看物流"
+        android:textColor="#276de8"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/checkCode"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#d5efff"
+        android:gravity="center"
+        android:text="查看券码"
+        android:textColor="#276de8"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/remindSend"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#ffcdcf"
+        android:gravity="center"
+        android:text="提醒发货"
+        android:textColor="#e51c24"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/contactShop"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#ffcdcf"
+        android:gravity="center"
+        android:text="联系卖家"
+        android:textColor="#e51c24"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cancelOrder"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#fddecf"
+        android:gravity="center"
+        android:text="取消订单"
+        android:textColor="#ff5301"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/payNow"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#d5efff"
+        android:gravity="center"
+        android:text="立即付款"
+        android:textColor="#276de8"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/confirmReceive"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#d5efff"
+        android:gravity="center"
+        android:text="确定收货"
+        android:textColor="#276de8"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/afterSale"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#fddecf"
+        android:gravity="center"
+        android:text="去售后"
+        android:textColor="#ff5301"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/evaluate"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="13dp"
+        android:background="#d5efff"
+        android:gravity="center"
+        android:text="去评价"
+        android:textColor="#276de8"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:background="@color/whit"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/thumb"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/title"
+                android:textColor="#151515"
+                android:textSize="15sp"
+                android:text="啥都好看萨拉萨 撒旦就撒旦"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/describe"
+                android:textSize="10sp"
+                android:text="啥都好看萨拉萨"
+                android:textColor="#505050"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

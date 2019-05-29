@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="11dp"
+              android:layout_marginTop="7dp"
+              android:background="@drawable/shape_account"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/order_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3a3a"
+            android:textSize="9sp"
+            android:text="订单标号：20194635462"/>
+    <TextView
+            android:id="@+id/user_money"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3a3a"
+            android:textSize="9sp"
+            android:text="变动金额：20194635462"/>
+    <TextView
+            android:id="@+id/change_time"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3a3a"
+            android:textSize="9sp"
+            android:text="变动时间20194635462"/>
+
+    <TextView
+            android:id="@+id/desc"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3a3a"
+            android:textSize="9sp"
+            android:text="描述：2019463545646464662"/>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whit"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/goodsIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:id="@+id/goodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/goodsIcon"
+        android:maxLines="2"
+        android:paddingRight="10dp"
+        android:text="HAODUOYI2018时尚卫衣秋季新品女装 "
+        android:textColor="@color/colorBlackText"
+        android:textSize="12sp" />
+
+    <!-- 规格-->
+    <TextView
+        android:id="@+id/goodsSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goodsName"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/goodsIcon"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textColor="@color/colorBlackText"
+        android:textSize="12sp" />
+
+    <!-- 非实体商品显示截止使用时间 -->
+    <TextView
+        android:id="@+id/goodsCutTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goodsName"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/goodsIcon"
+        android:text="截止时间2019年02月31日"
+        android:textColor="#f11010"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/goodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/goodsIcon"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/goodsIcon"
+        android:text="￥256×2"
+        android:textColor="@color/colorBlackText"
+        android:textSize="12sp" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/goodsIcon"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:text="查看产品使用说明"-->
+    <!--android:textColor="#6f6f6f"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_below="@+id/goodsIcon"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@color/colorLine" />-->
+
+</RelativeLayout>

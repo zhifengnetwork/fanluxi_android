@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search">
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/delete"
+                android:layout_toRightOf="@+id/searchIcon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="商品名称/商品编号/订单号"
+                android:textColor="@color/colorSecondText"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_cancel"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_search_btn"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/whit"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <!--<com.flyco.tablayout.SlidingTabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:background="@color/whit"-->
+    <!--app:tl_indicator_color="@color/colorPrimary"-->
+    <!--app:tl_indicator_width="30dp"-->
+    <!--app:tl_tab_space_equal="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--app:tl_textSelectColor="@color/colorPrimary"-->
+    <!--app:tl_textUnselectColor="@color/colorSecondText"-->
+    <!--app:tl_textsize="15sp"-->
+    <!--app:tl_underline_color="@color/colorBackground"-->
+    <!--app:tl_underline_gravity="BOTTOM"-->
+    <!--app:tl_underline_height="1dp"/>-->
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--app:defaultNavHost="true"-->
+    <!--app:navGraph="@navigation/nav_myorder"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <!--<androidx.viewpager.widget.ViewPager-->
+    <!--android:id="@+id/viewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_height="match_parent"/>-->
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/settle"
+        android:layout_below="@+id/myToolBar"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/addressLayout"
+                layout="@layout/layout_en_order_address" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/goodsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_round_whit_big"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never" />
+
+
+            <!-- 使用余额，快递等 -->
+            <!--<include layout="@layout/layout_order_option" />-->
+
+            <include layout="@layout/layout_order_other" />
+
+
+            <include layout="@layout/layout_order_price" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/settle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryBtn"
+        android:gravity="center"
+        android:text="提交订单"
+        android:textColor="@color/whit"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F75922</color>
+    <color name="colorPrimaryDark">#F75922</color>
+    <color name="colorAccent">#F75922</color>
+
+    <color name="head_bg">#F75922</color>
+
+    <color name="whit">#FFFFFF</color>
+    <!--透明-->
+    <color name="transparent">@android:color/transparent</color>
+    <color name="tab_tv">#B3B3B3</color>
+    <color name="tab_tv_true">#F86C3B</color>
+    <color name="menu_tv">#747373</color>
+    <color name="home_menu_bg">#F0F0F0</color>
+    <color name="home_head_line_tv_color">#F22E00</color>
+    <color name="home_promotion_title_color">#647BFB</color>
+
+    <color name="classify_title_item_color">#F7F7F7</color>
+
+    <color name="black_tv_color">#151514</color>
+    <color name="view_line_color">#E0E0E0</color>
+
+    <color name="bg_color">#F0F0F0</color>
+
+    <color name="colorLine">#33999999</color>
+
+    <color name="colorPrimaryText">#333333</color>
+    <color name="colorSecondText">#666666</color>
+    <color name="colorThirdText">#999999</color>
+
+
+    <color name="colorPrimaryBtn">#ff5722</color>
+
+    <color name="colorBlackText">#151515</color>
+
+    <color name="colorPrice">#E82F5C</color>
+
+    <color name="colorRedButton">#ff5722</color>
+    <color name="colorBackground">#F5F5F5</color>
+
+    <color name="colorDiscountHaveUse">#d36e4e</color>
+    <color name="colorDiscountHaveUse2">#d87b7e</color>
+
+
+    <color name="colorDiscountUnUse">#ff5722</color>
+    <color name="colorDiscountUnUse2">#ff5722</color>
+
+    <color name="colorBtnCheck">#FF6B3C</color>
+
+    <color name="colorDiscountTimeOut">#968e8b</color>
+    <color name="colorDiscountUnTimeOut2">#ada5a5</color>
+
+    <color name="colorifyitemText">#262626</color>
+
+    <color name="colorifySecondText">#999999</color>
+    <color name="ifyTitleBackground">#F8F8F8</color>
+
+
+    <!--  遮挡布局颜色 -->
+    <color name="color_pop_bottom">#33999999</color>
+
+    <color name="color_btn_press">#CA4300</color>
+
+</resources>

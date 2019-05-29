@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/whit"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/collect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_collection"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:text="收藏"
+        android:textColor="#666666"
+        android:textSize="11sp" />
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/kefu"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:text="客服"
+        android:textColor="#666666"
+        android:textSize="11sp" />
+
+    <!--<Space android:layout_width="0dp" android:layout_height="1dp"-->
+    <!--android:layout_weight="1"/>-->
+
+    <LinearLayout
+        android:id="@+id/buySelfLayout"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:background="#f3b53f"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/singlePrice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:text="￥256"
+            android:textColor="@color/whit"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text="单独购买"
+            android:textColor="@color/whit"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupBuyLayout"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:background="#ff5722"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/groupPrice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:text="￥123"
+            android:textColor="@color/whit"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text="发起拼单"
+            android:textColor="@color/whit"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

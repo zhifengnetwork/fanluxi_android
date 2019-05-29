@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:button="@null"
+             android:textSize="12sp"
+             android:layout_width="wrap_content"
+             android:textColor="@color/selector_focus_condition"
+             android:background="@drawable/selector_focus_condition"
+             android:gravity="center"
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:layout_marginRight="20dp"
+             android:layout_height="wrap_content"/>
+

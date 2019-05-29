@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:text="history"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:paddingTop="2dp"
+          android:textColor="@color/colorSecondText"
+          android:layout_marginRight="10dp"
+          android:paddingBottom="2dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:textSize="13sp"
+          android:background="@drawable/shape_search_history"
+          android:layout_height="wrap_content">
+
+</TextView>

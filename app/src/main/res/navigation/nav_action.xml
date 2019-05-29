@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_set"
+            app:startDestination="@id/auctionFragment">
+
+    <fragment
+            android:id="@+id/auctionFragment"
+            android:name="com.zf.fanluxi.ui.fragment.action.AuctionFragment"
+            android:label="竞拍"
+            tools:layout="@layout/fragment_auction">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/groupFragment"
+            android:name="com.zf.fanluxi.ui.fragment.action.GroupFragment"
+            android:label="团购"
+            tools:layout="@layout/fragment_group">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/secKillFragment"
+            android:name="com.zf.fanluxi.ui.fragment.action.SecKillFragment"
+            android:label="秒杀"
+            tools:layout="@layout/fragment_seckill">
+
+    </fragment>
+
+</navigation>

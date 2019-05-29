@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:paddingRight="10dp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <com.zf.fanluxi.view.CircleImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/userIcon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/i"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNum"
+                android:layout_toRightOf="@+id/userIcon"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginTop="15dp"
+                android:text="1********12"/>
+
+        <TextView
+                android:id="@+id/reply"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_alignLeft="@+id/userIcon"
+                android:layout_below="@+id/userIcon"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryText"
+                android:lineSpacingExtra="3dp"
+                android:textSize="9sp"
+                android:ellipsize="end"
+                android:text="双十二买的，价格便宜，电池耐用，屏幕分辨率和以前的诺基亚一样好，质量一直这么好，不愧是华为手机"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/reply_img"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

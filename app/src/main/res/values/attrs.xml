@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <!--标题文字-->
+        <attr name="ct_title_name" format="string" />
+        <!--标题文字颜色-->
+        <attr name="ct_title_color" format="color" />
+        <!--标题文字大小-->
+        <attr name="ct_title_size" format="dimension" />
+        <!--标题文字背景色-->
+        <attr name="ct_title_bd_color" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="StarRatingView">
+        <attr name="stat_on" format="reference" />
+        <attr name="stat_off" format="reference" />
+        <attr name="stat_half" format="reference" />
+        <attr name="ratable" format="boolean" />
+        <attr name="star_padding" format="dimension" />
+    </declare-styleable>
+
+
+
+</resources>

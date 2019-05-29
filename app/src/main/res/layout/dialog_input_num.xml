@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   android:layout_width="match_parent"
+                                   app:cardElevation="0dp"
+                                   android:background="@color/whit"
+                                   app:cardCornerRadius="8dp"
+                                   android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:paddingTop="55dp"
+                  android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/decrease"
+                       android:padding="5dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/selector_reduce"/>
+
+            <View android:layout_width="1dp" android:layout_height="15dp"
+                  android:background="@color/colorPrimaryText"
+                  android:layout_marginLeft="15dp"/>
+
+            <EditText
+                    android:background="@null"
+                    android:id="@+id/numberInput"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlackText"
+                    android:paddingRight="13dp"
+                    android:text="1"/>
+
+            <View android:layout_width="1dp" android:layout_height="15dp"
+                  android:background="@color/colorPrimaryText"
+                  android:layout_marginRight="15dp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/increase"
+                       android:layout_height="wrap_content"
+                       android:padding="8dp"
+                       android:src="@drawable/increase"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:layout_marginTop="45dp"
+              android:background="@color/colorLine"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                      android:layout_gravity="center_horizontal"
+                      android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:id="@+id/cancel"
+                      android:textSize="14sp"
+                      android:textColor="@color/colorPrimaryText"
+                      android:text="取消"/>
+
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:textSize="14sp"
+                      android:id="@+id/confirm"
+                      android:textColor="@color/whit"
+                      android:background="@color/colorPrimaryBtn"
+                      android:text="确定"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

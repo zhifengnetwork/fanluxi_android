@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qiandao2"
+        />
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal">
+
+
+            <LinearLayout
+                    android:layout_marginTop="88dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#e51c23"
+                        android:text="总积分："
+                />
+                <TextView
+                        android:id="@+id/points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#e51c23"
+                        android:text="1314"
+                />
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/continue_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:textColor="#e51c23"
+                    android:text="已经连续签到257天"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whit"
+                    android:layout_marginTop="30dp"
+                    android:textSize="17sp"
+                    android:text="今日签到成功"
+            />
+            <TextView
+                    android:id="@+id/add_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"
+                    android:textColor="#e51c23"
+                    android:text="+10积分"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

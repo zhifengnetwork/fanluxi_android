@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="45dp">
+
+    <View android:layout_width="2px"
+          android:layout_height="match_parent"
+          android:background="@color/colorLine"/>
+
+    <TextView
+            android:id="@+id/attribute"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#bbbbbb"
+            android:text="属性"/>
+
+    <View android:layout_width="2px"
+          android:layout_height="match_parent"
+          android:background="@color/colorLine"/>
+
+    <TextView
+            android:id="@+id/attr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#0f0f0f"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingLeft="20dp"
+            android:text="参数"/>
+
+    <View android:layout_width="2px"
+          android:layout_height="match_parent"
+          android:background="@color/colorLine"/>
+
+</LinearLayout>

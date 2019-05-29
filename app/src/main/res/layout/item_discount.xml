@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/preferential_a"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/priceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/condition"
+            android:layout_alignRight="@+id/condition"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="2dp"
+                android:text="¥"
+                android:textColor="@color/colorPrice"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="5"
+                android:textColor="@color/colorPrice"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceLayout"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:text="满240元可用"
+            android:textColor="@color/colorPrice"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/useTime"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="21dp"
+            android:layout_toRightOf="@+id/condition"
+            android:background="@drawable/label_a"
+            android:drawablePadding="15dp"
+            android:gravity="right"
+            android:paddingRight="3dp"
+            android:text="智丰券"
+            android:textColor="@color/whit"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/discountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/type"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/type"
+            android:text="全品类"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/useTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/type"
+            android:layout_alignBottom="@+id/condition"
+            android:text="使用时间2018-2-3"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_discount_unuse"
+        android:gravity="center"
+        android:text="立即使用"
+        android:textColor="@color/whit"
+        android:textSize="12sp" />
+
+</LinearLayout>
