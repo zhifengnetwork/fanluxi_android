@@ -96,7 +96,6 @@ class MeFragment : BaseFragment(), CommendContract.View {
 
     }
 
-
     override fun showLoading() {
     }
 
