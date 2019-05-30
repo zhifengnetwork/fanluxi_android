@@ -31,9 +31,9 @@ class BonusActivity : BaseActivity(), BonusContract.View {
     }
 
     override fun getAdList(bean: List<AdvertList>) {
-        if (bean.isNotEmpty()) {
-            GlideUtils.loadUrlImage(this, BASE_URL + bean[0].ad_code, bonus_ad_img)
-        }
+//        if (bean.isNotEmpty()) {
+//            GlideUtils.loadUrlImage(this, BASE_URL + bean[0].ad_code, bonus_ad_img)
+//        }
     }
 
     override fun showLoading() {
@@ -51,7 +51,7 @@ class BonusActivity : BaseActivity(), BonusContract.View {
     }
 
     override fun initToolBar() {
-        titleName.text = "微分销会员"
+        titleName.text = "老微分销会员"
         back.setOnClickListener {
             finish()
         }
@@ -93,9 +93,9 @@ class BonusActivity : BaseActivity(), BonusContract.View {
 
     override fun initEvent() {
         //升级会员
-        buy_member.setOnClickListener {
-            BuyMemberActivity.actionStart(this)
-        }
+//        buy_member.setOnClickListener {
+//            BuyMemberActivity.actionStart(this)
+//        }
         //分润商品
         share_goods.setOnClickListener {
             ShareGoodsActivity.actionStart(this)
@@ -104,10 +104,10 @@ class BonusActivity : BaseActivity(), BonusContract.View {
         my_member.setOnClickListener {
             MyMemberActivity.actionStart(this)
         }
-        //提现
-        cash_btn.setOnClickListener {
-            CashOutActivity.actionStart(this)
-        }
+//        //提现
+//        cash_btn.setOnClickListener {
+//            CashOutActivity.actionStart(this)
+//        }
 
     }
 
@@ -123,9 +123,9 @@ class BonusActivity : BaseActivity(), BonusContract.View {
 
     @SuppressLint("SetTextI18n")
     fun setData() {
-        balance.text = "账户余额￥" + mData?.user_money + "元"
-        if (mData?.distribut_money == null) profit.text = "累计收益￥0.00元" else profit.text =
-            "累计收益￥" + mData?.distribut_money + "元"
-        property.text = "资产总计￥" + mData?.total_property + "元"
+//        balance.text = "账户余额￥" + mData?.user_money + "元"
+//        if (mData?.distribut_money == null) profit.text = "累计收益￥0.00元" else profit.text =
+//            "累计收益￥" + mData?.distribut_money + "元"
+//        property.text = "资产总计￥" + mData?.total_property + "元"
     }
 }
