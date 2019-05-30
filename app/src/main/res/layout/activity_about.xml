@@ -1,82 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <include layout="@layout/layout_toolbar"/>
+    <include layout="@layout/layout_toolbar" />
 
-    <ImageView android:layout_width="110dp"
-               android:layout_height="110dp"
-               android:layout_gravity="center_horizontal"
-               android:layout_marginTop="20dp"
-               android:src="@drawable/zfmart_wx"/>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_down" />
 
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_gravity="center_horizontal"
-              android:textSize="14sp"
-              android:textColor="@color/colorPrimaryText"
-              android:layout_marginTop="10dp"
-              android:layout_marginBottom="10dp"
-              android:text="扫描二维码，下载DC商城APP"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="扫描二维码，下载凡露希APP"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp" />
 
     <LinearLayout
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_round_whit"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/shape_round_whit"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="隐私政策"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="14sp" />
 
-        <TextView android:layout_width="match_parent"
-                  android:text="隐私政策"
-                  android:drawableRight="@drawable/arrow"
-                  android:textSize="14sp"
-                  android:paddingTop="15dp"
-                  android:paddingBottom="15dp"
-                  android:gravity="center_vertical"
-                  android:textColor="@color/colorPrimaryText"
-                  android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine" />
 
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:background="@color/colorLine"/>
-
-        <TextView android:layout_width="match_parent"
-                  android:text="给我评分"
-                  android:drawableRight="@drawable/arrow"
-                  android:textSize="14sp"
-                  android:paddingTop="15dp"
-                  android:paddingBottom="15dp"
-                  android:gravity="center_vertical"
-                  android:textColor="@color/colorPrimaryText"
-                  android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="给我评分"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
-    <Space android:layout_width="1dp" android:layout_height="0dp"
-           android:layout_weight="1"/>
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textSize="14sp"
-            android:textColor="@color/colorSecondText"
-            android:text="Copyright@2004-2019"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Copyright@2004-2019"
+        android:textColor="@color/colorSecondText"
+        android:textSize="14sp" />
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="40dp"
-            android:textSize="14sp"
-            android:textColor="@color/colorSecondText"
-            android:text="广州滴蕊生物科技有限公司"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="40dp"
+        android:text="广州凡露希生物科技有限公司"
+        android:textColor="@color/colorSecondText"
+        android:textSize="14sp" />
 
 </LinearLayout>

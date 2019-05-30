@@ -1,121 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/whit"
-              android:orientation="vertical"
-              android:fitsSystemWindows="true">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whit"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <include layout="@layout/layout_toolbar"/>
+    <include layout="@layout/layout_toolbar" />
+
     <LinearLayout
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="63dp"
-                android:text="DC商城账户修改"
-                android:textColor="#151515"
-                android:textSize="24sp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="63dp"
+            android:text="凡露希账户修改"
+            android:textColor="#151515"
+            android:textSize="24sp" />
 
         <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/shape_login_input"
-                android:gravity="center_vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_login_input"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <ImageView
-                    android:id="@+id/phoneIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/mobilephone"/>
+                android:id="@+id/phoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mobilephone" />
 
             <EditText
-                    android:id="@+id/phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:background="@null"
-                    android:hint="请输入手机号"
-                    android:imeOptions="actionNext"
-                    android:inputType="number"
-                    android:paddingLeft="10dp"
-                    android:textSize="12sp"/>
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textSize="12sp" />
 
         </RelativeLayout>
 
         <TextView
-                android:id="@+id/phoneError"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="5dp"
-                android:background="#ffe8cb"
-                android:drawableLeft="@drawable/ic_asterisk"
-                android:drawablePadding="12dp"
-                android:gravity="center_vertical"
-                android:paddingLeft="10dp"
-                android:text="您的账号不正确"
-                android:textColor="#101010"
-                android:textSize="12sp"
-                android:visibility="gone"/>
+            android:id="@+id/phoneError"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffe8cb"
+            android:drawableLeft="@drawable/ic_asterisk"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="您的账号不正确"
+            android:textColor="#101010"
+            android:textSize="12sp"
+            android:visibility="gone" />
 
         <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <EditText
-                    android:id="@+id/code"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_toLeftOf="@+id/sendCode"
-                    android:background="@drawable/shape_login_input"
-                    android:hint="请输入验证码"
-                    android:imeOptions="actionDone"
-                    android:inputType="number"
-                    android:paddingLeft="12dp"
-                    android:textSize="12sp"/>
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/sendCode"
+                android:background="@drawable/shape_login_input"
+                android:hint="请输入验证码"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingLeft="12dp"
+                android:textSize="12sp" />
 
             <TextView
-                    android:id="@+id/sendCode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/code"
-                    android:layout_alignBottom="@id/code"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/selector_code"
-                    android:gravity="center"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:text="发送验证码"
-                    android:textColor="@color/selector_code"
-                    android:textSize="14sp"/>
+                android:id="@+id/sendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/code"
+                android:layout_alignBottom="@id/code"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_code"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="发送验证码"
+                android:textColor="@color/selector_code"
+                android:textSize="14sp" />
 
         </RelativeLayout>
 
         <TextView
-                android:id="@+id/codeHint"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="5dp"
-                android:background="#ffe8cb"
-                android:drawableLeft="@drawable/ic_asterisk"
-                android:drawablePadding="12dp"
-                android:gravity="center_vertical"
-                android:paddingLeft="10dp"
-                android:text="您输入的验证码不正确"
-                android:textColor="#101010"
-                android:textSize="12sp"
-                android:visibility="gone"/>
+            android:id="@+id/codeHint"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffe8cb"
+            android:drawableLeft="@drawable/ic_asterisk"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="您输入的验证码不正确"
+            android:textColor="#101010"
+            android:textSize="12sp"
+            android:visibility="gone" />
 
         <!--<RelativeLayout-->
         <!--android:layout_width="match_parent"-->
@@ -152,90 +154,90 @@
         <!--</RelativeLayout>-->
 
         <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <EditText
-                    android:id="@+id/pwd"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/shape_login_input"
-                    android:digits="@string/filterNumLetter"
-                    android:hint="请输入重置密码"
-                    android:imeOptions="actionNext"
-                    android:inputType="textPassword"
-                    android:paddingLeft="12dp"
-                    android:textSize="12sp"/>
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_login_input"
+                android:digits="@string/filterNumLetter"
+                android:hint="请输入重置密码"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp"
+                android:textSize="12sp" />
 
             <TextView
-                    android:id="@+id/pwdError"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/pwd"
-                    android:layout_alignLeft="@+id/pwd"
-                    android:layout_marginTop="5dp"
-                    android:background="#ffe8cb"
-                    android:drawableLeft="@drawable/ic_asterisk"
-                    android:drawablePadding="12dp"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="您输入的密码太简单"
-                    android:textColor="#101010"
-                    android:textSize="12sp"
-                    android:visibility="gone"/>
+                android:id="@+id/pwdError"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/pwd"
+                android:layout_alignLeft="@+id/pwd"
+                android:layout_marginTop="5dp"
+                android:background="#ffe8cb"
+                android:drawableLeft="@drawable/ic_asterisk"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="您输入的密码太简单"
+                android:textColor="#101010"
+                android:textSize="12sp"
+                android:visibility="gone" />
 
         </RelativeLayout>
 
         <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
             <EditText
-                    android:id="@+id/pwdEn"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_toRightOf="@+id/pwdEnTxt"
-                    android:background="@drawable/shape_login_input"
-                    android:digits="@string/filterNumLetter"
-                    android:hint="请再输入密码"
-                    android:imeOptions="actionDone"
-                    android:inputType="textPassword"
-                    android:paddingLeft="12dp"
-                    android:textSize="12sp"/>
+                android:id="@+id/pwdEn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/pwdEnTxt"
+                android:background="@drawable/shape_login_input"
+                android:digits="@string/filterNumLetter"
+                android:hint="请再输入密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp"
+                android:textSize="12sp" />
 
             <TextView
-                    android:id="@+id/pwdEnError"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/pwdEn"
-                    android:layout_alignLeft="@+id/pwdEn"
-                    android:layout_marginTop="5dp"
-                    android:background="#ffe8cb"
-                    android:drawableLeft="@drawable/ic_asterisk"
-                    android:drawablePadding="12dp"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="您输入密码不一致"
-                    android:textColor="#101010"
-                    android:textSize="12sp"
-                    android:visibility="gone"/>
+                android:id="@+id/pwdEnError"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/pwdEn"
+                android:layout_alignLeft="@+id/pwdEn"
+                android:layout_marginTop="5dp"
+                android:background="#ffe8cb"
+                android:drawableLeft="@drawable/ic_asterisk"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="您输入密码不一致"
+                android:textColor="#101010"
+                android:textSize="12sp"
+                android:visibility="gone" />
 
         </RelativeLayout>
 
         <TextView
-                android:id="@+id/confirm"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="45dp"
-                android:background="@drawable/selector_btn_big"
-                android:gravity="center"
-                android:text="点击修改"
-                android:textColor="@color/whit"
-                android:textSize="18sp"/>
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/selector_btn_big"
+            android:gravity="center"
+            android:text="点击修改"
+            android:textColor="@color/whit"
+            android:textSize="18sp" />
     </LinearLayout>
 
 
