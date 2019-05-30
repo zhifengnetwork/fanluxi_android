@@ -187,10 +187,15 @@ class MeFragment : BaseFragment(), CommendContract.View {
             BenefitActivity.actionStart(context)
         }
 
-        //优惠券中心
-//        discountLayout.setOnClickListener {
-//            DiscountActivity.actionStart(context)
-//        }
+        //余额
+        balanceLayout.setOnClickListener {
+            CashOutActivity.actionStart(context)
+        }
+
+        //鱼子面膜
+        discountLayout.setOnClickListener {
+            SearchGoodsActivity.actionStart(context, "", "DISTRIBUT")
+        }
 
         //我的钱包
         myWallet.setOnClickListener {

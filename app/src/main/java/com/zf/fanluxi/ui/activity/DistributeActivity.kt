@@ -25,8 +25,8 @@ class DistributeActivity : BaseActivity(), DistributeContract.View {
 
     override fun setDistribute(bean: DistributeBean) {
         totalMoney.text = bean.money_total.money_total
-        mostUserMoney.text = bean.money_total.max_moneys
-        userSum.text = bean.money_total.moneys
+//        mostUserMoney.text = bean.money_total.max_moneys
+//        userSum.text = bean.money_total.moneys
         teamTotal.text = bean.underling_number
         superId.text = bean.leader.user_id
         superName.text = bean.leader.nickname
@@ -44,7 +44,7 @@ class DistributeActivity : BaseActivity(), DistributeContract.View {
 
     override fun initToolBar() {
         back.setOnClickListener { finish() }
-        titleName.text = "我的分销"
+        titleName.text = "微分销会员"
         rightLayout.visibility = View.INVISIBLE
         StatusBarUtils.darkMode(this, ContextCompat.getColor(this, R.color.colorSecondText), 0.3f)
     }
@@ -81,9 +81,9 @@ class DistributeActivity : BaseActivity(), DistributeContract.View {
             MyMemberActivity.actionStart(this)
         }
 
-        distributeOrder.setOnClickListener {
-            DistributeOrderActivity.actionStart(this)
-        }
+//        distributeOrder.setOnClickListener {
+//            DistributeOrderActivity.actionStart(this)
+//        }
 
         detailRecord.setOnClickListener {
             DetailRecordActivity.actionStart(this)
